@@ -1,0 +1,124 @@
+.linkedin-btn,
+.twitter-btn,
+.facebook-btn,
+.github-btn {
+    background-color: rgb(44, 43, 43) !important;
+}
+
+.linkedin-btn:hover {
+    background-color: #0966c2 !important;
+}
+
+.twitter-btn:hover {
+    background-color: #1da1f2 !important;
+}
+
+.facebook-btn:hover {
+    background-color: #3b5998 !important;
+}
+
+.slack-btn:hover {
+    -webkit-animation: color-change 4s infinite;
+    -moz-animation: color-change 4s infinite;
+    -o-animation: color-change 4s infinite;
+    -ms-animation: color-change 4s infinite;
+    animation: color-change 4s infinite;
+}
+
+.github-btn:hover {
+    background-color: black !important;
+}
+
+.team-name {
+    color: var(--primary);
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: #36C5F0;
+    }
+    25% {
+        color: #2FB67D;
+    }
+    50% {
+        color: #ECB22E;
+    }
+    75%{
+        color: #E01E5A;
+    }
+    100% {
+        color: #36C5F0;
+    }
+}
+
+@-moz-keyframes color-change {
+    0% {
+        color: #36C5F0;
+    }
+    25% {
+        color: #2FB67D;
+    }
+    50% {
+        color: #ECB22E;
+    }
+    75%{
+        color: #E01E5A;
+    }
+    100% {
+        color: #36C5F0;
+    }
+}
+
+@-ms-keyframes color-change {
+    0% {
+        color: #36C5F0;
+    }
+    25% {
+        color: #2FB67D;
+    }
+    50% {
+        color: #ECB22E;
+    }
+    75%{
+        color: #E01E5A;
+    }
+    100% {
+        color: #36C5F0;
+    }
+}
+
+@-o-keyframes color-change {
+    0% {
+        color: #36C5F0;
+    }
+    25% {
+        color: #2FB67D;
+    }
+    50% {
+        color: #ECB22E;
+    }
+    75%{
+        color: #E01E5A;
+    }
+    100% {
+        color: #36C5F0;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: #36C5F0;
+    }
+    25% {
+        color: #2FB67D;
+    }
+    50% {
+        color: #ECB22E;
+    }
+    75%{
+        color: #E01E5A;
+    }
+    100% {
+        color: #36C5F0;
+    }
+}
