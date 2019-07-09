@@ -6,32 +6,16 @@
     <title>UTDesign Makerspace</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@fullcalendar/core@4.2.0/main.css"
-    />
-    <link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
-    <link rel="stylesheet" href="assets/css/daygrid.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-calendar.min.css" />
-    <link rel="stylesheet" href="assets/css/timegrid.min.css" />
+    <link href='node_modules/@fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='node_modules/@fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <link href='node_modules/@fullcalendar/timegrid/main.css' rel='stylesheet' />
+    <link href="node_modules/@fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
@@ -74,9 +58,9 @@
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link js-scroll-trigger" href="#portfolio"
-                  >Projects</a
-                >
+              <a class="nav-link js-scroll-trigger" href="#portfolio"
+                >Projects</a
+              >
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -647,6 +631,8 @@
         </div>
       </div>
     </div>
-    <script src="./assets/js/main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
