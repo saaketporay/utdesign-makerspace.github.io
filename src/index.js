@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
             interactionPlugin
         ],
         googleCalendarApiKey:
-            "AIzaSyCZzgj-vsBpP0faSH7Di-SgBXIMu04ZaII",
+            "AIzaSyCSNMxYW6PAh1QM0woCWwRnmZKZtm_6sFw",
         events: {
             googleCalendarId:
                 "8sv5eeliouchn2dodnoqb5tj0g@group.calendar.google.com"
