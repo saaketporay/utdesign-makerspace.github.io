@@ -235,3 +235,12 @@
   margin-top: 15px;
   color: #fff;
 }
+
+#viewer {
+    width: 100%;
+    height: 100%;
+  }
+
+.tall-boy {
+    height: 85vh;
+}
