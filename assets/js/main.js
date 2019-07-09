@@ -1,3 +1,4 @@
+import 'jquery';
 import 'bootstrap';
 import '@fullcalendar/core';
 import '@fullcalendar/bootstrap';
@@ -54,5 +55,74 @@ import '@fullcalendar/google-calendar';
     $('.portfolio-modal').on('hidden.bs.modal', function(e) {
       $(".navbar").removeClass("d-none");
     })
-  
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        var buttonText_small = {
+          today: "Today",
+          month: "M",
+          week: "W",
+          day: "D",
+          list: "list"
+        };
+        var header_small = {
+          left: "title",
+          center: "",
+          right: "dayGridMonth,timeGridWeek,timeGridDay"
+        };
+        var footer_small = {
+          left: "",
+          right: "prev,today,next"
+        };
+        var buttonText = {
+          today: "Today",
+          month: "Month",
+          week: "Week",
+          day: "Day",
+          list: "list"
+        };
+        var header = {
+          left: "prev,next today",
+          center: "title",
+          right: "dayGridMonth,timeGridWeek,timeGridDay"
+        };
+
+        var calendarEl = document.getElementById("calendar");
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [
+            "dayGrid",
+            "googleCalendar",
+            "bootstrap",
+            "timeGrid",
+            "interaction"
+          ],
+          googleCalendarApiKey:
+            "AIzaSyCZzgj-vsBpP0faSH7Di-SgBXIMu04ZaII",
+          events: {
+            googleCalendarId:
+              "8sv5eeliouchn2dodnoqb5tj0g@group.calendar.google.com"
+          },
+          contentHeight: $(window).height() * 0.62,
+
+          businessHours: {
+            daysOfWeek: [1, 2, 3, 4, 5, 6],
+            startTime: "09:00",
+            endTime: "22:00"
+          },
+          eventClick: function(info) {
+            info.jsEvent.preventDefault();
+            console.dir(info);
+          },
+          buttonText:
+            $(document).width() > 768 ? buttonText : buttonText_small,
+          header: $(document).width() > 768 ? header : header_small,
+          footer: $(document).width() > 768 ? null : footer_small
+        });
+
+        calendar.render();
+
+        $(document).resize(function() {
+          var width = $(document).width();
+        });
+      });
   })(jQuery); // End of use strict
