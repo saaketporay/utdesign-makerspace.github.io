@@ -2,6 +2,8 @@ import $ from 'jquery';
 import 'jquery.easing';
 import 'bootstrap';
 
+import PhotoSphereViewer from 'photo-sphere-viewer';
+
 import { Calendar } from '@fullcalendar/core';
 import bootstrapPlugin from '@fullcalendar/bootstrap';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -9,6 +11,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
+import './css/photo-sphere-viewer.min.css'
 import './css/bootstrap.min.css';
 import './css/fullcalendar.min.css';
 import './css/daygrid.min.css';
@@ -19,6 +22,25 @@ import './css/custom.css';
 window.jQuery = $;
 window.$ = $;
 "use strict"; // Start of use strict
+var clicker = 0;
+var images = ["photosphere.jpg", "photosphere2.jpg"]
+var viewer = new PhotoSphereViewer({
+    container: 'viewer',
+    panorama: './assets/img/photosphere.jpg',
+    navbar: [
+        'autorotate',
+        'zoom',
+        'fullscreen'
+    ]
+});
+
+$('#slide-next').click(function(){
+    viewer.setPanorama('./assets/img/' + images[++clicker % images.length]);
+})
+
+$('#slide-prev').click(function(){
+    viewer.setPanorama('./assets/img/' + images[--clicker % images.length]);
+})
 
 // Smooth scrolling using jQuery easing
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
@@ -65,6 +87,7 @@ $('.portfolio-modal').on('show.bs.modal', function (e) {
 $('.portfolio-modal').on('hidden.bs.modal', function (e) {
     $(".navbar").removeClass("d-none");
 })
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var buttonText_small = {
