@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import 'jquery.easing';
 import 'bootstrap';
 
 import { Calendar } from '@fullcalendar/core';
@@ -104,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
             timeGridPlugin,
             interactionPlugin
         ],
+        themeSystem: 'bootstrap',
         googleCalendarApiKey:
             "AIzaSyCSNMxYW6PAh1QM0woCWwRnmZKZtm_6sFw",
         events: {

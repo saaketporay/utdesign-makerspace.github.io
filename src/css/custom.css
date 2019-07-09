@@ -2,123 +2,236 @@
 .twitter-btn,
 .facebook-btn,
 .github-btn {
-    background-color: rgb(44, 43, 43) !important;
+  background-color: rgb(44, 43, 43) !important;
 }
 
 .linkedin-btn:hover {
-    background-color: #0966c2 !important;
+  background-color: #0966c2 !important;
 }
 
 .twitter-btn:hover {
-    background-color: #1da1f2 !important;
+  background-color: #1da1f2 !important;
 }
 
 .facebook-btn:hover {
-    background-color: #3b5998 !important;
+  background-color: #3b5998 !important;
 }
 
 .slack-btn:hover {
-    -webkit-animation: color-change 4s infinite;
-    -moz-animation: color-change 4s infinite;
-    -o-animation: color-change 4s infinite;
-    -ms-animation: color-change 4s infinite;
-    animation: color-change 4s infinite;
+  -webkit-animation: color-change 4s infinite;
+  -moz-animation: color-change 4s infinite;
+  -o-animation: color-change 4s infinite;
+  -ms-animation: color-change 4s infinite;
+  animation: color-change 4s infinite;
+}
+
+.instagram-btn:hover {
+  background: rgb(248, 236, 52);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(248, 236, 52, 1) 0%,
+    rgba(240, 45, 121, 1) 58%,
+    rgba(0, 46, 254, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(248, 236, 52, 1) 0%,
+    rgba(240, 45, 121, 1) 58%,
+    rgba(0, 46, 254, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(248, 236, 52, 1) 0%,
+    rgba(240, 45, 121, 1) 58%,
+    rgba(0, 46, 254, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8ec34",endColorstr="#002efe",GradientType=1);
 }
 
 .github-btn:hover {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 .team-name {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 @-webkit-keyframes color-change {
-    0% {
-        color: #36C5F0;
-    }
-    25% {
-        color: #2FB67D;
-    }
-    50% {
-        color: #ECB22E;
-    }
-    75%{
-        color: #E01E5A;
-    }
-    100% {
-        color: #36C5F0;
-    }
+  0% {
+    color: #36c5f0;
+  }
+  25% {
+    color: #2fb67d;
+  }
+  50% {
+    color: #ecb22e;
+  }
+  75% {
+    color: #e01e5a;
+  }
+  100% {
+    color: #36c5f0;
+  }
 }
 
 @-moz-keyframes color-change {
-    0% {
-        color: #36C5F0;
-    }
-    25% {
-        color: #2FB67D;
-    }
-    50% {
-        color: #ECB22E;
-    }
-    75%{
-        color: #E01E5A;
-    }
-    100% {
-        color: #36C5F0;
-    }
+  0% {
+    color: #36c5f0;
+  }
+  25% {
+    color: #2fb67d;
+  }
+  50% {
+    color: #ecb22e;
+  }
+  75% {
+    color: #e01e5a;
+  }
+  100% {
+    color: #36c5f0;
+  }
 }
 
 @-ms-keyframes color-change {
-    0% {
-        color: #36C5F0;
-    }
-    25% {
-        color: #2FB67D;
-    }
-    50% {
-        color: #ECB22E;
-    }
-    75%{
-        color: #E01E5A;
-    }
-    100% {
-        color: #36C5F0;
-    }
+  0% {
+    color: #36c5f0;
+  }
+  25% {
+    color: #2fb67d;
+  }
+  50% {
+    color: #ecb22e;
+  }
+  75% {
+    color: #e01e5a;
+  }
+  100% {
+    color: #36c5f0;
+  }
 }
 
 @-o-keyframes color-change {
-    0% {
-        color: #36C5F0;
-    }
-    25% {
-        color: #2FB67D;
-    }
-    50% {
-        color: #ECB22E;
-    }
-    75%{
-        color: #E01E5A;
-    }
-    100% {
-        color: #36C5F0;
-    }
+  0% {
+    color: #36c5f0;
+  }
+  25% {
+    color: #2fb67d;
+  }
+  50% {
+    color: #ecb22e;
+  }
+  75% {
+    color: #e01e5a;
+  }
+  100% {
+    color: #36c5f0;
+  }
 }
 
 @keyframes color-change {
-    0% {
-        color: #36C5F0;
-    }
-    25% {
-        color: #2FB67D;
-    }
-    50% {
-        color: #ECB22E;
-    }
-    75%{
-        color: #E01E5A;
-    }
-    100% {
-        color: #36C5F0;
-    }
+  0% {
+    color: #36c5f0;
+  }
+  25% {
+    color: #2fb67d;
+  }
+  50% {
+    color: #ecb22e;
+  }
+  75% {
+    color: #e01e5a;
+  }
+  100% {
+    color: #36c5f0;
+  }
+}
+
+.contact-clean {
+  background: #f1f7fc;
+  padding: 80px 0;
+}
+
+@media (max-width: 767px) {
+  .contact-clean {
+    padding: 20px 0;
+  }
+}
+
+.contact-clean form {
+  max-width: 480px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .contact-clean form {
+    padding: 30px;
+  }
+}
+
+.contact-clean h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 36px;
+  color: var(--primary);
+}
+
+.contact-clean .form-group:last-child {
+  margin-bottom: 5px;
+}
+
+.contact-clean form .form-control {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  outline: none;
+  color: inherit;
+  padding-left: 12px;
+  height: 42px;
+}
+
+.contact-clean form .form-control:focus {
+  border: 1px solid #b2b2b2;
+}
+
+.contact-clean form textarea.form-control {
+  min-height: 100px;
+  max-height: 260px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.contact-clean form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none !important;
+}
+
+.contact-clean form .btn:hover {
+  opacity: 1;
+}
+
+.contact-clean form .btn:active {
+  transform: translateY(1px);
+}
+
+.contact-clean form .btn-primary {
+  background-color: #055ada !important;
+  margin-top: 15px;
+  color: #fff;
 }
