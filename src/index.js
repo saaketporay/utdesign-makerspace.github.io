@@ -22,7 +22,8 @@ import './css/custom.css';
 window.jQuery = $;
 window.$ = $;
 "use strict"; // Start of use strict
-
+var clicker = 0;
+var images = ["photosphere.jpg", "photosphere2.jpg"]
 var viewer = new PhotoSphereViewer({
     container: 'viewer',
     panorama: './assets/img/photosphere.jpg',
@@ -32,6 +33,14 @@ var viewer = new PhotoSphereViewer({
         'fullscreen'
     ]
 });
+
+$('#slide-next').click(function(){
+    viewer.setPanorama('./assets/img/' + images[++clicker % images.length]);
+})
+
+$('#slide-prev').click(function(){
+    viewer.setPanorama('./assets/img/' + images[--clicker % images.length]);
+})
 
 // Smooth scrolling using jQuery easing
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
