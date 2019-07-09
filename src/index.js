@@ -8,7 +8,12 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
-
+import './css/bootstrap.min.css';
+import './css/fullcalendar.min.css';
+import './css/daygrid.min.css';
+import './css/timegrid.min.css';
+import './css/bootstrap-calendar.min.css';
+import './css/custom.css';
 
 window.jQuery = $;
 window.$ = $;
