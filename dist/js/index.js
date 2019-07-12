@@ -1,31 +1,8 @@
-import $ from 'jquery';
-import 'jquery.easing';
-import 'bootstrap';
-
-import PhotoSphereViewer from 'photo-sphere-viewer';
-
-import { Calendar } from '@fullcalendar/core';
-import bootstrapPlugin from '@fullcalendar/bootstrap';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import interactionPlugin from '@fullcalendar/interaction';
-import googleCalendarPlugin from '@fullcalendar/google-calendar';
-
-import './css/photo-sphere-viewer.min.css'
-import './css/fullcalendar.min.css';
-import './css/daygrid.min.css';
-import './css/timegrid.min.css';
-import './css/bootstrap-calendar.min.css';
-import './css/custom.css';
-
-window.jQuery = $;
-window.$ = $;
-"use strict"; // Start of use strict
 var clicker = 0;
 var images = ["photosphere.jpg", "photosphere2.jpg"]
 var viewer = new PhotoSphereViewer({
     container: 'viewer',
-    panorama: './assets/img/photosphere.jpg',
+    panorama: 'dist/img/photosphere.jpg',
     navbar: [
         'autorotate',
         'zoom',
@@ -34,11 +11,11 @@ var viewer = new PhotoSphereViewer({
 });
 
 $('#slide-next').click(function(){
-    viewer.setPanorama('./assets/img/' + images[++clicker % images.length]);
+    viewer.setPanorama('./dist/img/' + images[++clicker % images.length]);
 })
 
 $('#slide-prev').click(function(){
-    viewer.setPanorama('./assets/img/' + images[--clicker % images.length]);
+    viewer.setPanorama('./dist/img/' + images[--clicker % images.length]);
 })
 
 // Smooth scrolling using jQuery easing
@@ -119,13 +96,13 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     var calendarEl = document.getElementById('calendar');
 
-    var calendar = new Calendar( calendarEl, {
+    var calendar = new FullCalendar.Calendar( calendarEl, {
         plugins: [
-            dayGridPlugin,
-            googleCalendarPlugin,
-            bootstrapPlugin,
-            timeGridPlugin,
-            interactionPlugin
+            'dayGrid',
+            'googleCalendar',
+            'bootstrap',
+            'timeGrid',
+            'interaction'
         ],
         themeSystem: 'bootstrap',
         googleCalendarApiKey:
