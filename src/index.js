@@ -12,7 +12,6 @@ import interactionPlugin from '@fullcalendar/interaction';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 import './css/photo-sphere-viewer.min.css'
-import './css/bootstrap.min.css';
 import './css/fullcalendar.min.css';
 import './css/daygrid.min.css';
 import './css/timegrid.min.css';
