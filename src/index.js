@@ -142,7 +142,16 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         eventClick: function (info) {
             info.jsEvent.preventDefault();
-            console.dir(info);
+            
+        },
+        eventRender: function(){
+            let events = calendar.getEvents();
+            console.log(events);
+            events.forEach(event => {
+                let start = new Date(event.start);
+                let end = new Date(event.end);
+                $('#calendar-list-body').append(`<tr><td>${event.start}</td><td>${event.title}</td></tr>`)
+            })
         },
         buttonText: $(document).width() > 768 ? buttonText : buttonText_small,
         header: $(document).width() > 768 ? header : header_small,
@@ -150,6 +159,8 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     calendar.render();
+    
+    
 
     $(document).resize(function () {
         var width = $(document).width();

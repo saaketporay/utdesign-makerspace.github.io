@@ -296,3 +296,9 @@
 a.faq-link:hover{
   text-decoration: none;
 }
+
+.calendar-list{
+  margin-top: 25px;
+  margin-bottom: 55px;
+  height: 30px;
+}
