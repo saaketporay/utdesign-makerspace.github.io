@@ -5,30 +5,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UTDesign Makerspace</title>
-  <link rel="stylesheet" href="./dist/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.css" integrity="sha256-nJK+Jim06EmZazdCbGddx5ixnqfXA13Wlw3JizKK1GU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.2.0/main.min.css" integrity="sha256-AVsv7CEpB2Y1F7ZjQf0WI8SaEDCycSk4vnDRt0L2MNQ=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
-  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
-  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
-  <link rel="stylesheet" href="src/css/custom.css"/>
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-  <link rel="manifest" href="/assets/img/manifest.json">
+  <link rel="stylesheet" href="dist/fonts/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="dist/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="dist/css/custom.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon-16x16.png">
+  
   <meta name="msapplication-TileColor" content="#C1393D">
-  <meta name="msapplication-TileImage" content="/assets/img/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="dist/img/ms-icon-144x144.png">
   <meta name="theme-color" content="#C1393D">
 </head>
 
@@ -36,7 +38,7 @@
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: var(--primary);">
     <div class="container">
       <a class="navbar-brand" href="#page-top" style="font-family:Montserrat, sans-serif;color:rgb(255,255,255);"><img
-          style="position:relative; left: -15px; margin-right: 10px;" src="./assets/Logo-bg.png" width="70"> UTDesign
+          style="position:relative; left: -15px; margin-right: 10px;" src="./dist/Logo-bg.png" width="70"> UTDesign
         Makerspace</a>
 
       <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive"
@@ -76,7 +78,7 @@
       </div>
     </div>
   </nav>
-  <header class="masthead" style='background-image:url("assets/img/IMG_7735-22.jpg");'>
+  <header class="masthead" style='background-image:url("dist/img/background.jpg");'>
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in"><span>Welcome To Your Space</span></div>
@@ -103,7 +105,7 @@
           </p>
         </div>
         <div class="col-md-4 col-xl-3">
-          <span class="fa-stack fa-4x"><img src="assets/img/3d-printer-square-window-symbol.svg"
+          <span class="fa-stack fa-4x"><img src="dist/img/3d-printer-square-window-symbol.svg"
               style="width:70;height:70;font-size:108px;" /></span>
           <h4 class="section-heading">3D Printing</h4>
           <p class="text-muted">
@@ -162,7 +164,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="rounded-circle mx-auto" src="assets/img/team/Sabrina-Photo.png"
+            <img class="rounded-circle mx-auto" src="dist/img/team/Sabrina-Photo.png"
               style="background-color: #C1393D;" />
             <h4 class="team-name">Sabrina Banh</h4>
             <p class="text-muted">President</p>
@@ -184,7 +186,7 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="rounded-circle mx-auto" src="assets/img/team/Cameron-Photo.png"
+            <img class="rounded-circle mx-auto" src="dist/img/team/Cameron-Photo.png"
               style="background-color: #C1393D;" />
             <h4 class="team-name">Cameron Steele</h4>
             <p class="text-muted">Vice President</p>
@@ -206,7 +208,7 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="rounded-circle mx-auto" src="assets/img/team/Antonio-Photo.png"
+            <img class="rounded-circle mx-auto" src="dist/img/team/Antonio-Photo.png"
               style="background-color: #C1393D;" />
             <h4 class="team-name">Antonio Paredes</h4>
             <p class="text-muted">Secretary</p>
@@ -228,7 +230,7 @@
         </div>
         <div class="col-sm-4">
             <div class="team-member">
-              <img class="rounded-circle mx-auto" src="assets/img/team/Victor-Photo.png"
+              <img class="rounded-circle mx-auto" src="dist/img/team/Victor-Photo.png"
                 style="background-color: #C1393D;" />
               <h4 class="team-name">Victor Omoto</h4>
               <p class="text-muted">Treasurer</p>
@@ -260,73 +262,6 @@
           <h3 class="section-subheading text-muted">Coming Soon</h3>
         </div>
       </div>
-      <!--<div class="row">
-          <div class="col-sm-6 col-md-4 portfolio-item">
-            <a
-              href="#portfolioModal1"
-              class="portfolio-link"
-              data-toggle="modal"
-            >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/1-thumbnail.jpg"
-            /></a>
-
-            <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 portfolio-item">
-            <a
-              href="#portfolioModal2"
-              class="portfolio-link"
-              data-toggle="modal"
-            >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/2-thumbnail.jpg"
-            /></a>
-
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 portfolio-item">
-            <a
-              href="#portfolioModal3"
-              class="portfolio-link"
-              data-toggle="modal"
-            >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/3-thumbnail.jpg"
-            /></a>
-
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 portfolio-item">
-            <a
-              href="#portfolioModal6"
-              class="portfolio-link"
-              data-toggle="modal"
-            ></a>
-          </div>
-        </div>-->
-
     </div>
   </section>
   <section id="faq">
@@ -453,16 +388,26 @@
       </div>
     </div>
   </footer>
-  
-  <script src="./dist/jquery.min.js"></script>
-  <script src="./dist/moment.min.js"></script>
-  <script src="./dist/bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dot@1.1.2/doT.min.js" integrity="sha256-NAMDY+fvKrUQJsmShCThTI3KiwsoPo+R4z66OsDfC7A=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uevent@2.0.0/browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.106.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@3.5.1/dist/photo-sphere-viewer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap@4.2.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@4.2.0/main.min.js" integrity="sha256-L9T+qE3Ms6Rsuxl+KwLST6a3R/2o6m33zB5mR2KyPjU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.2.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.2.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@4.2.0/main.min.js"></script>
+  <script src="dist/js/index.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92351977-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-92351977-2');
   </script>
 
