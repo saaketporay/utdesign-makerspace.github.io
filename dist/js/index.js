@@ -1,8 +1,8 @@
 var clicker = 0;
-var images = ["photosphere.jpg", "photosphere2.jpg"]
+var images = ["photosphere.jpg"]
 var viewer = new PhotoSphereViewer({
     container: 'viewer',
-    panorama: 'dist/img/photosphere.jpg',
+    panorama: './dist/img/' + images[0],
     navbar: [
         'autorotate',
         'zoom',
