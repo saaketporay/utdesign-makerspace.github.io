@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var header_small = {
         left: "title",
         center: "",
-        right: "dayGridMonth,timeGridWeek,timeGridDay"
+        right: "dayGridMonth"
     };
     var footer_small = {
         left: "",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var header = {
         left: "prev,next today",
         center: "title",
-        right: "dayGridMonth,timeGridWeek,timeGridDay"
+        right: "dayGridMonth"
     };
     var calendarEl = document.getElementById('calendar');
 
