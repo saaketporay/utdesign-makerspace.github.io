@@ -66,22 +66,6 @@ $('.portfolio-modal').on('hidden.bs.modal', function (e) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    var buttonText_small = {
-        today: "Today",
-        month: "M",
-        week: "W",
-        day: "D",
-        list: "list"
-    };
-    var header_small = {
-        left: "title",
-        center: "",
-        right: "dayGridMonth"
-    };
-    var footer_small = {
-        left: "",
-        right: "prev,today,next"
-    };
     var buttonText = {
         today: "Today",
         month: "Month",
@@ -91,8 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     var header = {
         left: "prev,next today",
-        center: "title",
-        right: "dayGridMonth"
+        center: "",
+        right: "title"
     };
     var calendarEl = document.getElementById('calendar');
 
@@ -124,9 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
         eventRender: function(){
             
         },
-        buttonText: $(document).width() > 768 ? buttonText : buttonText_small,
-        header: $(document).width() > 768 ? header : header_small,
-        footer: $(document).width() > 768 ? null : footer_small
+        buttonText,
+        header
     })
 
     calendar.render();
