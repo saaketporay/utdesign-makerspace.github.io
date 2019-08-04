@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         eventClick: function (info) {
             info.jsEvent.preventDefault();
-            
+            window.open(info.event._def.extendedProps.description.match(/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/)[0])
         },
         eventRender: function(){
             
