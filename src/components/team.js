@@ -43,7 +43,6 @@ const Member = (props) => {
                 <ul className="list-inline social-buttons">
                     {
                         socialMedia.map((item, id) => {
-                            console.log(item.type, item.url)
                             if(item.url === null){
                                 return "";
                             }

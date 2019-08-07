@@ -9,7 +9,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 class Calendar extends React.Component {
     constructor() {
         super();
-        this.state = { events: [], modalOpen: false, currentEvent: {title: "", description: "", start: "", end: "", rsvp: ""} }
+        this.state = { events: [], modalOpen: false, currentEvent: {title: "", description: "", start: new Date(), end: new Date(), rsvp: ""} }
     }
     render() {
         return (
@@ -36,14 +36,20 @@ class Calendar extends React.Component {
                                     </Modal.Header>
 
                                     <Modal.Body>
+                                        <span>{this.state.currentEvent.start.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - {this.state.currentEvent.end.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} on {this.state.currentEvent.start.toLocaleString('default', { month: 'long' })} {this.getNumeralOrdinal(this.state.currentEvent.start.getDate())}</span>
                                         <p>{this.state.currentEvent.description}</p>
                                     </Modal.Body>
 
                                     <Modal.Footer>
-                                        <Button variant="secondary">Close</Button>
-                                        { this.state.currentEvent.rsvp ? <Button href={this.state.currentEvent.rsvp} variant="primary">RSVP</Button> : ""}
+                                        <Button variant="secondary" onClick={this.closeModal}>Close</Button>
+                                        { this.state.currentEvent.rsvp ? <Button href={this.state.currentEvent.rsvp} style={{backgroundColor: 'green', borderColor: 'green'}}>RSVP</Button> : ""}
                                     </Modal.Footer>
                             </Modal>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm="12">
+                            <a href="https://calendar.google.com/calendar/embed?src=8sv5eeliouchn2dodnoqb5tj0g%40group.calendar.google.com&ctz=America%2FChicago" style={{color: "black"}} title="View on Google Calendar">View on Google Calendar</a>
                         </Col>
                     </Row>
                 </Container>
@@ -55,6 +61,8 @@ class Calendar extends React.Component {
 
     }
 
+    getNumeralOrdinal = (number) => number+(["th","st","nd","rd"][((number % 100)-20)%10]||["th","st","nd","rd"][number % 100]||["th","st","nd","rd"][0])
+    
     handleDateClick = (arg) => {
         arg.jsEvent.preventDefault();
         console.dir(arg);
@@ -68,6 +76,10 @@ class Calendar extends React.Component {
         }
         this.setState({currentEvent: {title, start, end, description, rsvp, location}, modalOpen: true});
         console.log(this.state.currentEvent)
+    }
+
+    closeModal = () => {
+        this.setState({modalOpen: false})
     }
 }
 export default Calendar
