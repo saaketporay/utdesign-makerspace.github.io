@@ -1,0 +1,5 @@
+@import '../dist/vendor/fontawesome-free/css/all.min.css';
+@import '../dist/vendor/bootstrap/css/bootstrap.min.css';
+@import '../dist/css/agency.css';
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
