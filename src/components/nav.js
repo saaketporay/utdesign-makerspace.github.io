@@ -22,7 +22,7 @@ const NavSection = () => {
                         <Link className="nav-link" to="/#team" title="Scroll to Team Section">Team</Link>
                         <Link className="nav-link" to="/#faq" title="Scroll to F.A.Q. Section">FAQ</Link>
                         <Link className="nav-link" to="/#contact" title="Scroll to Contact Section">Contact</Link>
-                        <Nav.Link href="http://wiki.utdmaker.space" title="Visit our Wiki">Wiki</Nav.Link>
+                        <Nav.Link href="https://utdesignmakerspace-wiki.herokuapp.com/" title="Visit our Wiki">Wiki</Nav.Link>
                         <Nav.Link href="https://app.slack.com/client/TDM5QBZND/CDP5WT7JS" title="Join our slack" className="slack-btn"><FontAwesomeIcon icon={faSlack} /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

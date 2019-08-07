@@ -29,6 +29,7 @@
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-source-airtable": "^2.0.8",
     "gatsby-source-filesystem": "^2.1.9",
+    "gatsby-source-firebase": "^1.0.0",
     "gatsby-transformer-json": "^2.2.2",
     "gatsby-transformer-sharp": "^2.2.5",
     "netlify-lambda": "^1.5.1",
