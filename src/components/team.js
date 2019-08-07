@@ -37,7 +37,7 @@ const Member = (props) => {
     return (
         <Col xs="12" sm="6" md="4">
             <div className="team-member">
-                <Image className="rounded-circle mx-auto" src={img} style={{ "backgroundColor": "#C1393D" }} />
+                <Image className="rounded-circle mx-auto" src={img} style={{ "backgroundColor": "#C1393D" }} alt={`Picture of ${name}, who is the ${title}`} />
                 <h4 className="team-name">{name}</h4>
                 <p className="text-muted">{title}</p>
                 <ul className="list-inline social-buttons">
