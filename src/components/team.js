@@ -25,8 +25,8 @@ const SocialMedia = (props) => {
     }
     return (
         <li className="list-inline-item">
-            <a className={`${type}-btn`} href={url}>
-                <FontAwesomeIcon icon={Icon} />
+            <a className={`${type}-btn`} href={url} title={`View on ${type}`}>
+                <FontAwesomeIcon title={`${type} icon`} icon={Icon} />
             </a>
         </li>
     )
