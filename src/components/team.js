@@ -44,6 +44,9 @@ const Member = (props) => {
                     {
                         socialMedia.map((item, id) => {
                             console.log(item.type, item.url)
+                            if(item.url === null){
+                                return "";
+                            }
                             return (
                                 <SocialMedia type={item.type} url={item.url} key={id} />
                             )
