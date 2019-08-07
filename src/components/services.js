@@ -38,6 +38,7 @@ const ServicesSection = () => {
                         <a href="https://utdesignmakerspace.typeform.com/to/JcM2uX" className="join-btn">Join Now</a>
                     </Col>
                 </Row>
+                
             </section>
         </>
     )

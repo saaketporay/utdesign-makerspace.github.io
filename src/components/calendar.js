@@ -15,6 +15,11 @@ class Calendar extends React.Component {
             <section id="cal">
                 <Container>
                     <Row>
+                        <Col sm="12" className="text-center">
+                            <h2 className="section-heading text-uppercase">Calendar</h2>
+                        </Col>
+                    </Row>
+                    <Row style={{paddingTop: 45}}>
                         <Col sm="12">
                             <FullCalendar
                                 defaultView="dayGridMonth"

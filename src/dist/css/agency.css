@@ -159,6 +159,9 @@ ul.social-buttons li a {
   h2.section-heading{
     padding-top: 100px;
   }
+  section{
+    padding-bottom: 55px !important;
+  }
 }
 
 .linkedin-btn:hover {
