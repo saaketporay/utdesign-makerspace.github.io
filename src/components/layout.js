@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   }
   return (
     <>
-      <SEO title="UTD Makerspace" />
+      <SEO title="UTD Makerspace" lang="en" meta={{"keywords": "makerspace, utdallas, utdesign, utd, utd makerspace, utdallas makerspace", "google": "nositelinksearchbox", }} />
       {children}
       <Footer />
     </>

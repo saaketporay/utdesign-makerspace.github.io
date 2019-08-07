@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: `key1eT2S9DfgRkRjv`, // may instead specify via env, see below
+        apiKey: process.env.AIRTABLE_API_KEY, // may instead specify via env, see below
         tables: [
           {
             baseId: `appUJvcn2pZrTaWkS`,
