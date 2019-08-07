@@ -70,6 +70,12 @@ module.exports = {
         pageTransitionDelay: 0,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-functions`,
+      options: {
+        functionsSrc: `${__dirname}/.netlify/functions`
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }
