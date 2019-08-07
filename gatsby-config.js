@@ -19,7 +19,7 @@ module.exports = {
         background_color: `#C1393D`,
         theme_color: `#C1393D`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/dist/img/logos/Makerspace Logo-100.jpg`, // This path is relative to the root of the site.
       },
     },
     {
