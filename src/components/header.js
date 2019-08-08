@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header className="masthead" style={{"backgroundImage": require("../dist/img/background.jpg")}}>
+  <header className="masthead" style={{"backgroundImage": require("../images/background.jpg")}}>
     <div className="container">
       <div className="intro-text">
         <div className="intro-lead-in"><span>Welcome To Your Space</span></div>

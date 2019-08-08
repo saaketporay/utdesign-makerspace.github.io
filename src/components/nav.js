@@ -11,7 +11,7 @@ const NavSection = () => {
         <>
             <Navbar expand="lg" style={{'backgroundColor': '#c1393e'}} className="navbar navbar-expand-lg navbar-dark fixed-top">
                 <Navbar.Brand style={{"fontFamily":"Montserrat"}}>
-                    <Image src={require("../dist/img/logos/Logo-bg.webp")} alt="UTDesign Makerspace Logo" width={70} style={{"position":"relative","left":"-5px","marginRight":"10px"}}></Image>
+                    <Image src={require("../images/Logo.jpg")} alt="UTDesign Makerspace Logo" width={70} style={{"position":"relative","left":"-5px","marginRight":"10px"}}></Image>
                     UTDesign Makerspace
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

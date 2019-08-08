@@ -81,7 +81,7 @@ const Team = ({data}) => {
                                 return edge.node.data.FirstName !== undefined && edge.node.data.LastName !== undefined && edge.node.data.FirstName !== null && edge.node.data.LastName !== null;
                             }).map( (edge, index) => {
                                 const {FirstName, LastName, Github, Linkedin, Twitter, Role} = edge.node.data;
-                                return <Member key={index} name={FirstName + " " + LastName} title={Role} socialMedia={[{ type: "github", url: Github }, { type: "linkedin", url: Linkedin }, {type: "twitter", url: Twitter}]} img={require(`../dist/img/team/${FirstName}-Photo.png`)}></Member>
+                                return <Member key={index} name={FirstName + " " + LastName} title={Role} socialMedia={[{ type: "github", url: Github }, { type: "linkedin", url: Linkedin }, {type: "twitter", url: Twitter}]} img={require(`../images/team/${FirstName}-Photo.png`)}></Member>
                             })
                         }
                     </Row>
