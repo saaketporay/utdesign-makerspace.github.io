@@ -32,12 +32,12 @@ class Calendar extends React.Component {
                             />
                             <Modal show={this.state.modalOpen} title="test" onHide={() => this.setState({ modalOpen: false })} style={{backgroundColor: 'none'}}>
                                     <Modal.Header closeButton>
-                                        <Modal.Title>{this.state.currentEvent.title.replace(/<[^>]*>?/gm, '')}</Modal.Title>
+                                        <Modal.Title>{this.state.currentEvent.title}</Modal.Title>
                                     </Modal.Header>
 
                                     <Modal.Body>
                                         <span>{this.state.currentEvent.start.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - {this.state.currentEvent.end.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} on {this.state.currentEvent.start.toLocaleString('default', { month: 'long' })} {this.getNumeralOrdinal(this.state.currentEvent.start.getDate())}</span>
-                                        <p>{this.state.currentEvent.description.replace(/<[^>]*>?/gm, '')}</p>
+                                        <p>{this.state.currentEvent.description}</p>
                                     </Modal.Body>
 
                                     <Modal.Footer>
