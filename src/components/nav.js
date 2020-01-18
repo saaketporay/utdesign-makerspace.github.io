@@ -2,7 +2,7 @@ import React from "react"
 import { Navbar, Nav, Image } from "react-bootstrap"
 import {Link} from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSlack } from '@fortawesome/free-brands-svg-icons' 
+import { faSlack, faDiscord } from '@fortawesome/free-brands-svg-icons' 
 
 
 const NavSection = () => {
@@ -23,7 +23,7 @@ const NavSection = () => {
                         <Link className="nav-link" to="/#faq" title="Scroll to F.A.Q. Section">FAQ</Link>
                         <Link className="nav-link" to="/#contact" title="Scroll to Contact Section">Contact</Link>
                         <Nav.Link href="https://utdmakerspacewiki.herokuapp.com/" title="Visit our Wiki">Wiki</Nav.Link>
-                        <Nav.Link href="https://join.slack.com/t/utdesignmakerspace/shared_invite/enQtNjg4MjA5NzM2Njg4LWI4MDQxM2FlMDk2NzEwMWRjOGRkMzhiODBkMjZjYTU5Y2ZmN2Y0MWQ4MmI5N2IwYWYyOWVjMTdlODA4MmRjNWQ" title="Join our slack" className="slack-btn"><FontAwesomeIcon icon={faSlack} /></Nav.Link>
+                        <Nav.Link href="https://discord.gg/Zy8GeCx" title="Join our Discord" className="slack-btn"><FontAwesomeIcon icon={faDiscord} /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
